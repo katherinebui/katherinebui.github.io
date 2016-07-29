@@ -1,19 +1,21 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>#noragrets</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1><em>#noragrets</em></h1>
-  <p>
+<div>
+  <h1 id="h1"><em>#noragrets</em></h1>
+  <p class="boxes">
     In 2014, I visited <strong>30 cities</strong> in <strong>13 different countries </strong> and landed in California with <strong>$1.92</strong> in my bank account. 
-  </p>
-
-  <p>
     During my third year of college, I decided to do a <mark>solo Europe trip</mark>. Knowing that I wanted to do this, I worked 2-3 jobs on top of being a full-time student and an intern to save up for this trip. Until this day, I wouldn't change a thing! I met many of my best friends abroad, ate great food, had dope conversations about cultures and most importantly, learned so much history! 
   </p>
+</div>
 
-  <h3>Some cities I visited:</h3>
-  <ul>
+<div class="boxes">
+  <h3 id="headings">Some cities I visited:</h3>
+  <ul id="cities">
     <li>London, England</li>
     <li>Amsterdam, Netherlands</li>
     <li>Paris, France</li>
@@ -25,59 +27,58 @@
     <li>Venice, Italy</li>
     <li>Ibiza, Spain</li>
   </ul>
+</div>
 
-  <img src= "Greece.jpg" alt="greece" height="300" width="600">
-  <br>
-  <img src= "Italy.jpg" alt="italy" height="300" width="600">
-  <br>
-  <img src= "Spain.jpg" alt="spain" height="300" width="600">
-  <br>
-  <br>
+<div id="images">
+  <img src= "Greece.jpg" alt="greece" height="400" width="900" id="greece">
+  <img src= "Italy.jpg" alt="italy" height="400" width="900" id="italy">
+  <img src= "Spain.jpg" alt="spain" height="400" width="900" id="spain">
+</div>
 
-  <form name="eurotrip2014" action="MAILTO:kaatherine.buii@gmail.com" method="post" enctype="text/plain">
-   <label>First Name:</label>
-   <input type="text" name="firstname">
-  
- 
-   <div>
-     <label>Last Name:</label>
-     <input type="text" name="lastname">
-   </div>
- 
-   <div>
-    <label>Email</label>
-     <input type="text" name="email">
-   </div>
- 
-   <div>
+<form name="eurotrip2014" action="MAILTO:kaatherine.buii@gmail.com" method="post" enctype="text/plain">
+
+<div class="form">
+  <label>First Name:</label>
+    <input type="text" name="firstname">
+</div>
+<div class="form">
+  <label>Last Name:</label>
+    <input type="text" name="lastname">
+</div>
+<div class="form">
+  <label>Email</label>
+    <input type="text" name="email">
+</div>
+<div class="form">
     From looking at the images above, where would you like to visit? 
-   <br>
-   <select name="cities">
+    <select name="countries">
      <option value="place">Santorini, Greece</option>
      <option value="place">Venice, Italy</option>
      <option value="place">Ibiza, Spain</option>
-   </select>
-   </div>
- 
-   <div>
+    </select>
+</div>
+<div class="form">
     <textarea name="comment form" rows="10" cols="50">Why would you like to visit this place?</textarea>
-   </div>
- 
-   <button type="submit">Tell me your reasons!</button>
- </form>
+</div>
+<div class="form">
+    <button type="submit">Tell me your reasons!</button>
+</div>
+</form>
 
-<p>
-  <strong>Here's the </strong><a href="secret.html"><em>secret</em></a> <strong>to traveling...</strong>
-</p>
+<div class="boxes">
+  <p>
+    <strong>Here's the </strong><a href="secret.html"><em>secret</em></a> <strong>to traveling...</strong>
+  </p>
+</div>
 
-<h3>Check out <a href="http://triphackr.com/how-travel-has-changed-my-life/">Triphackr</a>!</h3>
-<p>
-  Triphackr has outlined some great reasons why you should travel. The site is awesome because the content is consistent and I can tell clearly where the headings are. It also allows comments, giving users a way to connect with each other. On the other hand, it does not scale correctly. When I make the page smaller, the links tend to mesh together. It is also a super simple layout. I would love to see more CSS to make it pop!
-</p>
-<br>
-<br>
-<br>
-<footer><em>All photos captured by me on iPhone 5 (yeah, not even a 5s!) Thanks @<a href="http://www.apple.com/">Apple</a>!</em></footer>
+<div class="boxes">
+  <h3 id="h3">Check out <a href="http://triphackr.com/how-travel-has-changed-my-life/">Triphackr</a>!</h3>
+  <p>
+    Triphackr has outlined some great reasons why you should travel. The site is awesome because the content is consistent and I can tell clearly where the headings are. It also allows comments, giving users a way to connect with each other. On the other hand, it does not scale correctly. When I make the page smaller, the links tend to mesh together. It is also a super simple layout. I would love to see more CSS to make it pop!
+  </p>
+</div>
+
+<footer id="footer"><em>All photos captured by me on iPhone 5 (yeah, not even a 5s!) Thanks @<a href="http://www.apple.com/">Apple</a>!</em></footer>
 </body>
 </html>
 
